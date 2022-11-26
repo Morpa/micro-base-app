@@ -1,0 +1,44 @@
+name: base_app
+description: A new Flutter project.
+version: 1.0.0
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  micro_core:
+  micro_app_login:
+  micro_app_home:
+
+dependency_overrides:
+  micro_core:
+    git:
+      url: https://github.com/Morpa/micro-core.git
+      ref: v1.0.0
+
+  micro_commons_design_system:
+    git:
+      url: https://github.com/Morpa/micro-commons-design-system.git
+      ref: v1.0.0
+
+  micro_app_login:
+    git:
+      url: https://github.com/Morpa/micro-app-login.git
+      ref: v1.0.1
+
+  micro_app_home:
+    git:
+      url: https://github.com/Morpa/micro-app-home.git
+      ref: v1.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
